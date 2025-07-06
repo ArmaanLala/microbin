@@ -13,7 +13,7 @@ pub fn html_highlight(text: &str, extension: &str) -> String {
         .find_syntax_by_extension(extension)
         .or_else(|| Option::from(ps.find_syntax_plain_text()))
         .unwrap();
-    let mut h = HighlightLines::new(syntax, &ts.themes["InspiredGitHub"]);
+    let mut h = HighlightLines::new(syntax, &ts.themes["base16-ocean.dark"]);
 
     let mut highlighted_content: String = String::from("");
 

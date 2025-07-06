@@ -10,7 +10,6 @@ RUN \
 COPY . .
 
 RUN \
-  CARGO_NET_GIT_FETCH_WITH_CLI=true \
   cargo build --release
 
 # https://hub.docker.com/r/bitnami/minideb
